@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ESTUDIANTE</ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="ion-text-center ion-align-items-center">
+    <ion-img [src]="estudiante.imagen" alt="Imagen" style="width: 90px; height: 90px;"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      {{ estudiante.name }}
+    </ion-card-header>
+    <ion-card-content>
+      <p>Dirección: {{estudiante.direccion}}</p>
+      <p>Teléfono: {{estudiante.telefono}}</p>
+      <!-- Agrega más detalles según tus necesidades --> 
+    </ion-card-content>
+  </ion-card>
+</ion-content>
